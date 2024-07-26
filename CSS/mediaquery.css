@@ -37,16 +37,16 @@
     width: 95%;
     height: 65%;
   }
-  .circle{
+  .circle {
     display: none;
   }
 }
 
 @media only screen and (max-width: 750px) {
+
   .content {
     width: 100%;
     height: auto;
-    /* height: 100%; */
     background-image: none;
   }
   .page1 {
@@ -65,7 +65,7 @@
   .navbar ul {
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
   }
   .navbar ul div {
     width: 70px;
@@ -75,15 +75,15 @@
   }
   .container {
     margin: 5px 5px 50px 5px;
-    padding: 160px 10px 10px 10px;
+    padding: 100px 10px 10px 10px;
     width: 100%;
-    height: auto; 
+    height: auto;
     text-align: left;
     align-content: start;
     box-sizing: border-box;
   }
   .name {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   .desc {
     font-size: 1.8rem;
@@ -95,19 +95,9 @@
   .oneScroll {
     display: none;
   }
-  
-  /* .oneScroll {
-    display: block;
-    padding-left: 35px;
-    margin: 0;
-  }
-  .oneScroll img {
-    filter: brightness(0);
-    height: 30px;
-  } */
 
   .section1 {
-    margin-bottom: 80px;
+    margin-bottom: 150px;
     min-height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
@@ -119,9 +109,9 @@
   .profile img {
     margin-top: 10px;
     margin-left: 0;
-    width: 255px;
-    height: 340px;
-  }
+    width: 60%;
+    height: 90%;
+}
   .aboutMe {
     align-content: center;
     text-align: left;
@@ -145,8 +135,8 @@
   #splash1 {
     display: block;
     position: absolute;
-    top: 820px;
-    right: 0px;
+    top: 730px;
+    right: -5px;
     width: 150px;
     height: 150px;
     z-index: -1;
@@ -154,11 +144,11 @@
   #splash2 {
     display: block;
     position: absolute;
-    top: 1415px;
+    top: 1355px;
     right: 0;
-    width: 400px;
-    height: 700px;
-    opacity: 0.5;
+    width: 360px;
+    height: 650px;
+    opacity: 0.3;
   }
   .div_splash3 {
     align-content: center;
@@ -169,6 +159,8 @@
     width: 150px;
     height: 150px;
   }
+
+
 
   .section2 {
     position: relative;
@@ -188,7 +180,7 @@
     height: 100%;
   }
   .projectDesc h1 {
-    margin: 10px 0 0 0;
+    margin: 20px 0 0 0;
   }
   .projectDesc h2 {
     margin-top: 15px;
@@ -199,11 +191,20 @@
     font-size: 17px;
     padding: 0 15px;
   }
-  .projectDesc .tags {
+  /* .projectDesc .tags {
     padding-left: 15px;
+  } */
+
+  .projectDesc .tags ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectDesc .tags ul li{
+    font-size: 13px;
   }
   .projectDesc .link {
-    margin-top: 60px;
+    margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
     font-size: 13px;
@@ -215,9 +216,10 @@
     align-content: start;
   }
   .projectImg img {
-    width: 340px;
-    height: 330px;
-  }
+    width: 80%;
+    height: 60%;
+    margin-bottom: 30px;
+}
   .projectDesc .buttons {
     position: absolute;
     bottom: 10px;
@@ -244,9 +246,9 @@
     width: 100%;
   }
   .contactForm form button {
-    font-size: 17px;
+    font-size: 15px;
   }
-  .circle{
+  .circle {
     display: none;
   }
 }

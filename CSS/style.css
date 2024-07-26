@@ -7,7 +7,10 @@
 html {
   scroll-behavior: smooth;
 }
-
+body{
+  cursor: none;
+  overflow-x: hidden;
+}
 .content {
   width: 100%;
   height: 100%;
@@ -430,6 +433,9 @@ html {
 }
 
 .section4 {
+  /* overflow-x: hidden;
+  width: 100%;
+  height: auto; */
   padding: 10px;
   background-color: #000c24;
   color: white;
@@ -443,6 +449,7 @@ html {
   flex-direction: column;
 }
 .copyrights {
+  width:fit-content;
   font-size: 20px;
   margin-top: 20px;
   color: antiquewhite;
