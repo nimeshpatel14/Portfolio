@@ -66,6 +66,7 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+    padding-top: 20px;
   }
   .navbar ul div {
     width: 70px;
@@ -73,6 +74,13 @@
     font-size: 18px;
     padding: 0;
   }
+  .navbar ul div:hover {
+    background-image: none;
+    background-repeat: initial;
+    background-size: initial;
+    background-position: initial;
+  }
+  
   .container {
     margin: 5px 5px 50px 5px;
     padding: 100px 10px 10px 10px;
@@ -165,7 +173,7 @@
   .section2 {
     position: relative;
     margin-bottom: 0px;
-    min-height: 100vh;
+    min-height: 105vh;
   }
   .card {
     width: 100%;

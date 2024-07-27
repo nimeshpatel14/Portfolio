@@ -7,7 +7,7 @@
 html {
   scroll-behavior: smooth;
 }
-body{
+body {
   cursor: none;
   overflow-x: hidden;
 }
@@ -89,7 +89,7 @@ body{
 }
 
 .logos a img:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   box-shadow: 0 4px 8px rgba(39, 38, 38, 0.2);
 }
 
@@ -98,8 +98,11 @@ body{
   margin-bottom: 120px;
   cursor: pointer;
 }
+.oneScroll img {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 .oneScroll img:hover {
-  box-shadow: 0 4px 8px rgba(150, 148, 148, 0.2);
+  transform: scale(1.3);
 }
 .section1 {
   margin: 9px 0 150px 0;
@@ -248,11 +251,13 @@ body{
   justify-content: center;
   align-items: center;
   font-size: 15px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 .projectDesc .link:hover {
   background-color: #001a4d;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
 }
 
 .projectDesc .link a {
@@ -278,7 +283,7 @@ body{
   transition: transform 0.2s ease;
 }
 .projectDesc .buttons button:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 .projectImg {
@@ -298,7 +303,7 @@ body{
 }
 
 .projectImg img:hover {
-  transform: scale(1.03);
+  transform: scale(1.07);
 }
 
 #pro1 {
@@ -449,17 +454,27 @@ body{
   flex-direction: column;
 }
 .copyrights {
-  width:fit-content;
+  width: fit-content;
   font-size: 20px;
   margin-top: 20px;
   color: antiquewhite;
 }
 
-.circle{
+.circle {
   height: 24px;
   width: 24px;
   border-radius: 24px;
-  background: linear-gradient(90deg, #000c24, #2b243d, #533c53, #7b5868, #a2767c, #c59891, #e4bda8, #ffe4c4);
+  background: linear-gradient(
+    90deg,
+    #000c24,
+    #2b243d,
+    #533c53,
+    #7b5868,
+    #a2767c,
+    #c59891,
+    #e4bda8,
+    #ffe4c4
+  );
   position: absolute;
   pointer-events: none;
   top: 0;
